@@ -1,0 +1,225 @@
+
+
+.about-full{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+
+
+
+.about{
+    width: 80%;
+    box-sizing: border-box;
+}
+
+
+
+.about_head{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+
+
+    text-align: center;
+    color: rgb(0, 38, 255);
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.1rem;
+    margin-top: 10rem;
+}
+
+
+
+
+
+.my-pic-full{
+    position: relative;
+    display: inline-block;
+    margin: 0  1rem 0 1rem;
+    transition: 0.5s;
+}
+
+
+
+
+.my-pic-full span{
+    display: block;
+    position: absolute;
+    background: #0026ff;
+    z-index: 10;
+}
+
+
+.my-pic-full span:nth-child(1){
+    left: 0;
+    bottom: 0;
+    width: 3px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+
+
+
+.my-pic-full:hover span:nth-child(1){
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+
+
+
+.my-pic-full span:nth-child(2){
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+
+
+
+.my-pic-full:hover span:nth-child(2){
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+
+
+
+
+
+.my-pic-full span:nth-child(3){
+    right: 0;
+    bottom: 0;
+    width: 3px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+
+
+
+.my-pic-full:hover span:nth-child(3){
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+
+
+
+
+
+.my-pic-full span:nth-child(4){
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+
+
+
+.my-pic-full:hover span:nth-child(4){
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.my-pic{
+    position: relative;
+    width: 10rem;
+    float: left;
+}
+
+
+
+
+.about-cont{
+    position: relative;
+    margin-top: 1rem;
+}
+
+
+    
+
+
+
+.name span{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    color: #ff3e3e;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+    font-weight: bold;
+
+}
+
+
+
+
+
+
+.about-text{
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    word-spacing: 0.2rem;
+    clear: left;
+}
+
+
+
+
+
+@media (min-width:720px){
+    .about{
+        width: 60%;
+    }
+    
+    
+    
+    
+    .about-text{
+        clear: none;
+    }
+    }
+    
+    

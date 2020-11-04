@@ -1,0 +1,288 @@
+
+
+.box {
+    display: flex;
+    align-items: center;
+    width: 95vw;
+    position: relative;
+}
+
+
+.intro {
+    display: grid;
+    position: relative;
+    left: 50%;
+    margin: -9.5rem;
+    z-index: 10;
+}
+
+
+
+.intro .item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20rem;
+    margin: 0 !important;
+    padding: 0 !important;
+    transition: 0.5s;
+    border: solid 2px;
+    filter: drop-shadow(4px 4px 1px #333);
+    border-radius: 5px;
+}
+
+
+.awesome {
+    clip-path: polygon(100% 0, 70% 0, 30% 100%, 100% 100%);
+}
+
+
+
+.me {
+    clip-path: polygon(70% 0, 0 0, 0 100%, 30% 100%);
+}
+
+
+
+.intro:hover .item {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+
+
+
+.intro .item:hover {
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+
+
+
+.picture,
+.pic {
+    width: 100%;
+    filter: blur(0.1px);
+    opacity: 1;
+    border-radius: 5px;
+}
+
+
+.item .content {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 70%;
+    padding: 1em;
+    opacity: 0;
+    transition: 0.2s;
+    text-transform: uppercase;
+}
+
+
+
+
+.intro .item:hover .content {
+    bottom: 30%;
+    left: 10%;
+    opacity: 1;
+}
+
+
+.intro .item:hover .pic {
+    filter: blur(2px);
+    opacity: 0.9;
+}
+
+
+
+
+.item .me-cont {
+    height: 109px;
+    width: 221px;
+    border-radius: 0px;
+
+    background: #00FFF0;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.me-cont .tri {
+    width: 220px;
+    height: 107.5px;
+
+    position: absolute;
+    left: -0.3%;
+    top: 0;
+
+    clip-path: polygon(76% 0, 100% 0, 100% 100%, 0 100%, 0 76%);
+
+    background: #FFF500;
+
+}
+
+.me-cont .my-otl {
+    width: 69px;
+    height: 47px;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    background: #fff500;
+    border: 1px solid #000000;
+}
+
+
+.me-cont .my {
+    position: absolute;
+    left: 10%;
+    top: 6%;
+    font-size: 34px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+
+
+.me-cont .awe-otl {
+    width: 92px;
+    height: 29px;
+
+    position: absolute;
+    left: 35%;
+    top: 27%;
+
+    background: #00FFF0;
+    border: 0.5px solid #000000;
+}
+
+.awe-otl .awe {
+    width: 80px;
+    height: 19px;
+    position: absolute;
+    left: 5%;
+    top: 20%;
+
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+
+    text-shadow: 0.3px 0.3px 0px #FFFFFF,
+        0.6px 0.6px 0px #FF388C;
+}
+
+
+
+.me-cont .pro-otl {
+    width: 174px;
+    height: 45px;
+
+    position: absolute;
+    left: 10%;
+    bottom: 2%;
+    background: #000000;
+    border: 1px solid #000000;
+}
+
+
+.pro-otl .pro {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+
+    font-size: 26px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #00FFF0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.parallex {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    cursor: none;
+}
+
+
+
+.parallex .find {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    color: rgb(0, 255, 255);
+    font-size: 2.5rem;
+    text-shadow: 2px 2px crimson;
+    z-index: 10;
+    text-align: center;
+    letter-spacing: 0.1em;
+    word-spacing: 0.1rem;
+}
+
+
+
+.found {
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    z-index: 10;
+    font-size: 2.5rem;
+    top: 55%;
+    position: absolute;
+    text-align: center;
+}
+
+
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+.title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+
+
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    transition: 0.1s;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    transform: scale(1);
+}
